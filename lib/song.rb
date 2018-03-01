@@ -5,11 +5,11 @@ class Song
   @@all = []
 
   def initialize(name)
-    @name = name 
+    @name = name
   end
 
-  def self.all 
-    @@all 
+  def self.all
+    @@all
   end
 
   def self.destroy_all
@@ -17,7 +17,7 @@ class Song
   end
 
   def self.save
-    @@all << self 
+    @@all << self
   end
 
   def self.create(name)
