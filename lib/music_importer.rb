@@ -8,6 +8,7 @@ class MusicImporter
 
   def files
     files = Dir.entries(@path)
+    files.match(/.*.mp3/)
   end
 
   def import
