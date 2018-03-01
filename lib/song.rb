@@ -49,7 +49,7 @@ class Song
 
   def self.new_from_filename(file)
     parse = file.split(" - ")
-    Song.new(parse[1], parse[0], parse[2])
+    Song.new(parse[1])
   end
 
   def self.create_from_filename(file)
