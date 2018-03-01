@@ -7,7 +7,7 @@ class MusicImporter
   end
 
   def files
-
+    files = Dir.entries(@path)
   end
 
   def import
