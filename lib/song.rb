@@ -48,7 +48,7 @@ class Song
   end
 
   def self.new_from_filename(file)
-    parse = file.split(" - ")
+    parse = file.split(" - " || ".")
     artist = Artist.find_or_create_by_name(parse[0])
     genre = Genre.find_or_create_by_name(parse[2])
     Song.new(parse[1], artist, genre)
