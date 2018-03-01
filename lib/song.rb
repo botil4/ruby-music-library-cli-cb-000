@@ -13,7 +13,7 @@ class Song
   # def artist=(artist)
   #   @artist = artist if !artist.nil?
   # end
-  # 
+  #
   # def artist=(genre)
   #   @genre = genre if !genre.nil?
   # end
