@@ -10,10 +10,11 @@ class Song
     @genre = genre
   end
 
-  # def artist=(artist)
-  #   @artist = artist if !artist.nil?
-  # end
-  #
+  def artist=(artist)
+    @artist = artist if !artist.nil?
+    artist.add_song(self)
+  end
+
   # def artist=(genre)
   #   @genre = genre if !genre.nil?
   # end
