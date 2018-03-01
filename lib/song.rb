@@ -32,7 +32,7 @@ class Song
     @@all << self
   end
 
-  def self.create(name)
+  def create(name)
     song = Song.new(name)
     song.save
     song
