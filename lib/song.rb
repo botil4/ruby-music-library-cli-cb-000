@@ -6,12 +6,12 @@ class Song
 
   def initialize(name, artist = nil, genre = nil)
     @name = name
-    @artist = artist
+    @artist = artist if !artist.nil?
     @genre = genre
   end
 
-  def @artist=(artist)
-    @artist = artist if !artist.nil?
+  def artist=(artist)
+    @artist = artist 
     artist.add_song(self)
   end
 
